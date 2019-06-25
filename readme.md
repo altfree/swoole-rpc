@@ -33,5 +33,3 @@ $client->send($x);
 echo $client->recv();
 $client->close();
 ```
-# swoole-rpc
-# swoole-rpc
