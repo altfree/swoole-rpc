@@ -1,0 +1,22 @@
+{
+    "name": "远元健康rpc",
+    "require": {
+      "illuminate/database": "*",
+      "illuminate/pagination":" 5.4.36"
+    },
+    "autoload":{
+      "psr-4":{
+         "BaseStud\\":"basestud/",
+        "Business\\":"business/",
+        "Models\\":"models/",
+        "Support\\":"support/"
+
+      },
+      "files": [
+        "support/helpers.php"
+      ]
+    }
+   
+  }
+  
+  
