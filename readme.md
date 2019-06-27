@@ -16,7 +16,7 @@ class OrderService{
     }
 }
 ```
-###  客户端请求事例：
+###  客户端请求事例（此处为php调用demo，代码中有go调用的代码事例）：
 ```php
 <?php
 $client = new swoole_client(SWOOLE_SOCK_TCP);
@@ -28,7 +28,7 @@ $args=[[],['id','order_no']];
 //$args参数为数组
 //serv类名称
 //func请求方法
-$x=['serv'=>'Business\OrderService','func'=>'orderInfo','arg'=>$args];
+$x=['serv'=>'\OrderService','func'=>'orderInfo','arg'=>$args];
 $client->send($x);
 echo $client->recv();
 $client->close();
